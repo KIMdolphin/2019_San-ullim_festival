@@ -1,7 +1,7 @@
 # 2019_San-ullim_festival
 San-ullim is jeju science highschool's  Year-end festival
 
-1. 부스 운영 주제
+## 부스 운영 주제
 ‘더 많이 더 적게’라는 검색량 비교 게임에서 아이디어를 착안하였음. 구글 상에서 제주과학고 관련 키워드 검색량 + 선생님 이름 검색량(동명이인 포함) + 과학자, 수학자, 법칙 등의 이름의 검색량 등 우리 학교와 관련된 데이터를 바탕으로 제주과학고 학생들이 참여할 수 있는 ‘더 많이 더 적게’ 게임을 운영하고자 함. 
 
 벤치마킹 사이트 : higherlowerkorea.com
