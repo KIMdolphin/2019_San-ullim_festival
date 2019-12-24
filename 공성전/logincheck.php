@@ -3,6 +3,7 @@ require $_SERVER["DOCUMENT_ROOT"].'/scripts/dbconnect.php';
 $connect = DBConnect();
 
 $teamkey = $_POST['teamkey']; // 아이디
+
 $hashed = hash("sha256", $teamkey);
 $query = "select * from castle where hashed='$hashed'";
 $result = mysqli_query($connect, $query);

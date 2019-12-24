@@ -1,4 +1,3 @@
-// 공성전 4팀
 <!DOCTYPE html>
 <html >
   <head>
@@ -31,7 +30,7 @@
     $result = mysqli_query($connect, "select * from score where team='4'");
     $row = mysqli_fetch_array($result);
     echo "<div class='container'>";
-    echo "<div class='col-sm-11'>";
+    echo "<div class='col-sm-12'>";
     echo "<table class='table table-hover table-dark'>
           <tr class='active'>
           <th ><center>TEAM NO.</th>
