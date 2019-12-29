@@ -34,6 +34,7 @@
     echo "<table class='table table-hover table-dark'>
           <tr class='active'>
           <th ><center>TEAM NO.</th>
+          <th ><center>name</th>
           <th ><center>round 1</th>
           <th ><center>round 2</th>
           <th ><center>round 3</th>
@@ -42,18 +43,19 @@
           <th ><center>round 6</th>
           <th ><center>등수</th>
           </tr>";
-      if ($row[1] == 3 || $row[1] == 6){
+      if ($row[2] == 3 || $row[2] == 6){
         $result = mysqli_query($connect, 'select * from score where True');
         while ($row2 = mysqli_fetch_array($result)){
           echo "<tr class='active'>";
           echo "<td ><center>" . $row2[0] . "</td>";
-          echo "<td ><center>" . $row2[2] . "</td>";
+          echo "<td ><center>" . $row2[1] . "</td>";
           echo "<td ><center>" . $row2[3] . "</td>";
           echo "<td ><center>" . $row2[4] . "</td>";
           echo "<td ><center>" . $row2[5] . "</td>";
           echo "<td ><center>" . $row2[6] . "</td>";
           echo "<td ><center>" . $row2[7] . "</td>";
           echo "<td ><center>" . $row2[8] . "</td>";
+          echo "<td ><center>" . $row2[9] . "</td>";
           echo "</tr>";
         }
         echo "</table>";
@@ -61,17 +63,17 @@
       else{
         echo "<tr class='active'>";
         echo "<td><center>" . $row[0] . "</td>";
-        echo "<td><center>" . $row[2] . "</td>";
-        echo "<td><center>" . $row[3] . "</td>";
-        echo "<td><center>" . $row[4] . "</td>";
-        echo "<td><center>" . $row[5] . "</td>";
-        echo "<td><center>" . $row[6] . "</td>";
-        echo "<td><center>" . $row[7] . "</td>";
-        echo "<td><center>" . $row[8] . "</td>";
+        echo "<td ><center>" . $row[1] . "</td>";
+        echo "<td ><center>" . $row[3] . "</td>";
+        echo "<td ><center>" . $row[4] . "</td>";
+        echo "<td ><center>" . $row[5] . "</td>";
+        echo "<td ><center>" . $row[6] . "</td>";
+        echo "<td ><center>" . $row[7] . "</td>";
+        echo "<td ><center>" . $row[8] . "</td>";
+        echo "<td ><center>" . $row[9] . "</td>";
         echo "</tr>";
         echo "</table>";
       }
-      echo "</div>";
       echo "</div>";
       mysqli_close($connect);
     ?>
